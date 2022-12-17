@@ -105,7 +105,7 @@ function findWinner(e) {
 }
 
 function showWinner(winnerSymbol) {
-  winner.innerText = winnerSymbol + " is the winner";
+  winner.innerText = winnerSymbol + " Won";
 }
 function hidePlayerIndicator() {
   playerIndicator.style.display = "none";
