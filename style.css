@@ -6,6 +6,49 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
+.container {
+  margin: 0 20px;
+}
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  position: relative;
+}
+
+.heading {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.player-indicator,
+.winner {
+  text-align: center;
+  font-size: 2.3rem;
+}
+.restart {
+  display: block;
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding: 10px;
+  border: 2px solid black;
+  outline: none;
+  background-color: #fff;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  /* display: none; */
+}
+.restart:hover {
+  box-shadow: 0 5px #666;
+}
+.restart:active:hover {
+  transform: translateY(4px);
+}
 table {
   border-collapse: collapse;
 }
@@ -35,47 +78,4 @@ td button {
 }
 td button:disabled {
   color: black;
-}
-
-.container {
-  margin: 0 20px;
-}
-.game-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 60vh;
-  position: relative;
-}
-
-.heading {
-  text-align: center;
-  margin-top: 2rem;
-}
-
-.player-indicator,
-.winner {
-  text-align: center;
-  font-size: 2.3rem;
-}
-
-.restart {
-  display: block;
-  width: 150px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  padding: 10px;
-  border: 2px solid black;
-  outline: none;
-  background-color: #fff;
-  text-transform: uppercase;
-  border-radius: 5px;
-  cursor: pointer;
-  text-align: center;
-}
-
-.restart:active:hover {
-  transform: translateY(4px);
-  box-shadow: 0 5px #666;
 }
